@@ -1,0 +1,22 @@
+version: "3"
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+      - jaeger
+    environment:
+      - SERVICE_NAME=og-preview-api
+      - JAEGER_PORT=jaeger:4317
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686" # UI
+      - "4317:4317" # OTLP gRPC endpoint (used by OpenTelemetry SDK)
