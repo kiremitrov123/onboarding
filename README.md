@@ -1,14 +1,13 @@
-# 🧪 Onboarding API Challenges Showcase
+# The API Sandbox
 
 This repository contains several one-day microservices focused on building fast, resilient, and production-aware APIs.
 Each service tackles a different concept including caching, real-time syncing, distributed systems, and database performance.
 
-While all services aim to check every box from the requirements, the **Commenting API** received the greatest attention and depth.
-It's designed to be the most production-ready and stress-tested among them.
+While all services aim to check every box from the requirements, the Commenting API puts greater emphasis on complexity and depth—featuring a more intricate design and broader coverage of edge cases.
 
 ---
 
-## ✅ Projects
+## Projects
 
 ### 1. **OG Tag URL Preview Service**
 
